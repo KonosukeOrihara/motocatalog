@@ -10,7 +10,7 @@ public class MotosController {
     
     @RequestMapping("/hello")
     public String hello(@RequestParam String name, Model model) {
-        model.addAttribute(attributeName:"name", name);
+        model.addAttribute("name", name);
         return "test";
     }
 }
